@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Upstream TapHome Home Assistant integration
+    url: https://github.com/martindybal/taphome-homeassistant/issues
+    about: Report integration code defects to the upstream maintainer when appropriate.
+  - name: TapHome API documentation
+    url: https://taphome.com/en/docs/expose-devices/taphome-api/
+    about: Check the official TapHome API documentation first.

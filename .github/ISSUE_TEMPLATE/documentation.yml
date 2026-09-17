@@ -1,0 +1,24 @@
+name: Documentation issue
+about: Report a problem or ambiguity in this guide
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include API tokens, customer information, or private network details."
+  - type: input
+    id: section
+    attributes:
+      label: Guide section
+      placeholder: e.g. API discovery / YAML configuration / troubleshooting
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source or reference
+      description: Link to current TapHome, Home Assistant, or upstream integration documentation when possible.

@@ -1,0 +1,20 @@
+name: Smoke checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Python syntax
+        run: python3 -m py_compile scripts/taphome_inventory.py
+      - name: Check shell syntax
+        run: bash -n scripts/taphome_api_probe.sh
+      - name: Check scripts expose help / safe startup
+        run: python3 scripts/taphome_inventory.py --help >/dev/null

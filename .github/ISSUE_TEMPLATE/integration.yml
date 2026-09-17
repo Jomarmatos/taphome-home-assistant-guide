@@ -1,0 +1,33 @@
+name: Installation / integration problem
+about: Ask about applying the guide to a generic installation
+body:
+  - type: markdown
+    attributes:
+      value: "Remove API tokens, public IP addresses, customer names, and unrelated device data before posting."
+  - type: input
+    id: ha
+    attributes:
+      label: Home Assistant version
+  - type: input
+    id: integration
+    attributes:
+      label: TapHome integration version / commit
+  - type: dropdown
+    id: install
+    attributes:
+      label: Home Assistant installation type
+      options:
+        - Home Assistant OS
+        - Home Assistant Container
+        - Home Assistant Supervised
+        - Other
+  - type: textarea
+    id: api
+    attributes:
+      label: API test result
+      description: State whether /discovery and /getDeviceValue/<id> work. Redact sensitive data.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant TapHome log lines
+      description: Include only relevant lines and remove secrets/private data.
