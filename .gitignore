@@ -1,0 +1,21 @@
+# Secrets and local settings
+.env
+.env.*
+secrets.yaml
+*.token
+
+# Generated TapHome inventories (may contain site/customer information)
+inventory/
+*.inventory.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

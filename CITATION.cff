@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "TapHome + Home Assistant Integration Guide"
+message: "If you use this guide in documentation, training, or an installation handover, please credit the author."
+type: manual
+authors:
+  - family-names: "Mireles"
+    given-names: "Jomar"
+version: 1.0.0
+date-released: 2026-09-17
+url: "https://github.com/Jomarmatos/taphome-home-assistant-guide"
+repository-code: "https://github.com/Jomarmatos/taphome-home-assistant-guide"
+license: "CC-BY-4.0"
