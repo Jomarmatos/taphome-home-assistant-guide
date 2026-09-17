@@ -1,0 +1,52 @@
+# Generic example only.
+# Replace every IP address, ID, name and device mapping with values from YOUR installation.
+# Keep the real API token in secrets.yaml, never in this file.
+
+taphome:
+  cores:
+    - id: home
+      token: !secret taphome_token
+      api_url: http://192.168.1.50/api/cloudapi/v1
+      webhook_id: taphome_home
+
+      use_description_as_name: true
+      use_description_as_entity_id: true
+
+      enabled_attributes:
+        - taphome_id
+        - taphome_name
+        - taphome_description
+        - taphome_category
+        - taphome_zone
+
+      # Device IDs below are fictional examples.
+      # Use /discovery to obtain the IDs exposed by your TapHome Core.
+
+      sensors:
+        - 101
+        - 102
+
+      binary_sensors:
+        - id: 201
+          device_class: door
+        - id: 202
+          device_class: motion
+
+      lights:
+        - 301
+        - 302
+
+      covers:
+        - id: 401
+          device_class: blind
+
+      switches:
+        - 501
+
+      buttons:
+        - 601
+
+      # Depending on the installed integration version, TapHome multi-value
+      # switches may be configured under this key.
+      multivalue_switches:
+        - 701
